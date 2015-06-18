@@ -18,7 +18,7 @@ myApp.onPageInit('about', function (page) {
     });
 });
 myApp.onPageInit('news-details', function (page) {
-	console.log('detail '+page.url);
+	console.log('detail');
 
 
 $(document).ready(function(){
@@ -31,12 +31,12 @@ $(document).ready(function(){
 				window.sessionStorage.setItem("page",currentPage); 
 				$('.top_small').append('<a href="'+ previouspage +'" class="back_small" data-transition="pop"></a>');
 				
-				
+			/*		
 				if(mid){
 					
 					$.ajax({
 					type: "GET",
-					url: "http://moiyug.ru/mha_server/news.php?id="+ mid +"",
+					url: "http://localhost/mha_server/news.php?id="+ mid +"",
 					jsonp: "callback",
 					dataType: "html",
 					crossDomain: true,
@@ -45,7 +45,7 @@ $(document).ready(function(){
 						
 					$( ".loading_spinner_all" ).hide();
 				
-					$('#js_alld').html(data);
+					$('#js_all').html(data);
 																						
 					},
 					error: function(){
@@ -60,7 +60,7 @@ $(document).ready(function(){
 				
 					$.ajax({
 					type: "GET",
-					url: "http://moiyug.ru/mha_server/news.php?page="+ ppage +"",
+					url: "http://localhost/mha_server/news.php?page="+ ppage +"",
 					jsonp: "callback",
 					dataType: "html",
 					crossDomain: true,
@@ -69,7 +69,95 @@ $(document).ready(function(){
 						
 					$( ".loading_spinner_all" ).hide();
 				
-					$('#js_alld').html(data);
+					$('#js_all').html(data);
+																						
+					},
+					error: function(){
+						$('#js_all').slideDown("slow").show(100).html('<div class="ce">Error: Connection problem...</div>').delay(10000).slideUp("slow").hide(100);
+					}
+					});
+					
+					} else {
+					*/
+					$.ajax({
+					type: "GET",
+					url: "http://localhost/mha_server/news.php",
+					jsonp: "callback",
+					dataType: "html",
+					crossDomain: true,
+					beforeSend: function() { $( ".loading_spinner_all" ).show(); },
+					success: function(data) {
+						
+					$( ".loading_spinner_all" ).hide();
+				
+					$('#js_all').html(data);
+																						
+					},
+					error: function(){
+						$('#js_all').slideDown("slow").show(100).html('<div class="ce">Error: Connection problem...</div>').delay(10000).slideUp("slow").hide(100);
+					}
+					});
+						
+					//}
+						
+				}
+});
+
+
+
+});
+
+myApp.onPageInit('news', function (page) {
+
+$(document).ready(function(){
+
+				var mid = page.query['id'];
+				var ppage = page.query['page'];
+				
+				var previouspage = window.sessionStorage.getItem("page");
+				var currentPage = page.url;
+				window.sessionStorage.setItem("page",currentPage); 
+				$('.top_small').append('<a href="'+ previouspage +'" class="back_small" data-transition="pop"></a>');
+				
+					
+				if(mid){
+					
+					$.ajax({
+					type: "GET",
+					url: "http://localhost/mha_server/news.php?id="+ mid +"",
+					jsonp: "callback",
+					dataType: "html",
+					crossDomain: true,
+					beforeSend: function() { $( ".loading_spinner_all" ).show(); },
+					success: function(data) {
+						
+					$( ".loading_spinner_all" ).hide();
+				
+					$('#js_all').html(data);
+																						
+					},
+					error: function(){
+						$('#js_all').slideDown("slow").show(100).html('<div class="ce">Error: Connection problem...</div>').delay(10000).slideUp("slow").hide(100);
+					}
+					});
+																				
+				
+				} else {
+				
+					if(ppage){
+				
+					$.ajax({
+					type: "GET",
+					url: "http://localhost/mha_server/news.php?page="+ ppage +"",
+					jsonp: "callback",
+					dataType: "html",
+					crossDomain: true,
+					beforeSend: function() { $( ".loading_spinner_all" ).show(); },
+					success: function(data) {
+						
+					$( ".loading_spinner_all" ).hide();
+				
+					$('#js_all').html(data);
 																						
 					},
 					error: function(){
@@ -81,7 +169,7 @@ $(document).ready(function(){
 					
 					$.ajax({
 					type: "GET",
-					url: "http://moiyug.ru/mha_server/news.php",
+					url: "http://localhost/mha_server/news.php",
 					jsonp: "callback",
 					dataType: "html",
 					crossDomain: true,
@@ -101,39 +189,6 @@ $(document).ready(function(){
 					}
 						
 				}
-});
-
-
-
-});
-
-myApp.onPageInit('news', function (page) {
-
-$(document).ready(function(){
-
-
-					$.ajax({
-					type: "GET",
-					url: "http://moiyug.ru/mha_server/news.php",
-					jsonp: "callback",
-					dataType: "html",
-					crossDomain: true,
-					beforeSend: function() { $( ".loading_spinner_all" ).show(); },
-					success: function(data) {
-						
-					$( ".loading_spinner_all" ).hide();
-				
-					$('#js_all').html(data);
-																						
-					},
-					error: function(){
-						$('#js_all').slideDown("slow").show(100).html('<div class="ce">Error: Connection problem...</div>').delay(10000).slideUp("slow").hide(100);
-					}
-					});
-						
-					
-						
-				
 //onready_end
 
 

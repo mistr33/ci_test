@@ -245,97 +245,97 @@ font-size:16px;
 font-weight:300;
 }
 .home-icon{
-background:url(images/icons/black/home.png);
+background:url(images/icons/white/home.png);
 background-size: auto 50%;
 background-repeat: no-repeat;
 background-position: 10px 50%;
 }
 .about-icon{
-background:url(images/icons/black/user.png);
+background:url(images/icons/white/user.png);
 background-size: auto 50%;
 background-repeat: no-repeat;
 background-position: 10px 50%;
 }
 .features-icon{
-background:url(images/icons/black/settings.png);
+background:url(images/icons/white/settings.png);
 background-size: auto 50%;
 background-repeat: no-repeat;
 background-position: 10px 50%;
 }
 .photos-icon{
-background:url(images/icons/black/photos.png);
+background:url(images/icons/white/photos.png);
 background-size: auto 50%;
 background-repeat: no-repeat;
 background-position: 10px 50%;
 }
 .blog-icon{
-background:url(images/icons/black/blog.png);
+background:url(images/icons/white/blog.png);
 background-size: auto 50%;
 background-repeat: no-repeat;
 background-position: 10px 50%;
 }
 .contact-icon{
-background:url(images/icons/black/contact.png);
+background:url(images/icons/white/contact.png);
 background-size: auto 40%;
 background-repeat: no-repeat;
 background-position: 10px 50%;
 }
 .lock-icon{
-background:url(images/icons/black/lock.png);
+background:url(images/icons/white/lock.png);
 background-size: auto 40%;
 background-repeat: no-repeat;
 background-position: 10px 50%;
 }
 .tools-icon{
-background:url(images/icons/black/tools.png);
+background:url(images/icons/white/tools.png);
 background-size: auto 40%;
 background-repeat: no-repeat;
 background-position: 10px 50%;
 }
 .envelope-icon{
-background:url(images/icons/black/envelope.png);
+background:url(images/icons/white/envelope.png);
 background-size: auto 40%;
 background-repeat: no-repeat;
 background-position: 10px 50%;
 }
 .download-icon{
-background:url(images/icons/black/download.png);
+background:url(images/icons/white/download.png);
 background-size: auto 40%;
 background-repeat: no-repeat;
 background-position: 10px 50%;
 }
 .video-icon{
-background:url(images/icons/black/video.png);
+background:url(images/icons/white/video.png);
 background-size: auto 40%;
 background-repeat: no-repeat;
 background-position: 10px 50%;
 }
 .heart-icon{
-background:url(images/icons/black/heart.png);
+background:url(images/icons/white/heart.png);
 background-size: auto 40%;
 background-repeat: no-repeat;
 background-position: 10px 50%;
 }
 .logout-icon{
-background:url(images/icons/black/logout.png);
+background:url(images/icons/white/logout.png);
 background-size: auto 40%;
 background-repeat: no-repeat;
 background-position: 10px 50%;
 }
 .news-icon{
-background:url(images/icons/black/newspaper.png);
+background:url(images/icons/white/newspaper.png);
 background-size: auto 40%;
 background-repeat: no-repeat;
 background-position: 10px 50%;
 }
 .price-icon{
-background:url(images/icons/black/briefcase.png);
+background:url(images/icons/white/briefcase.png);
 background-size: auto 40%;
 background-repeat: no-repeat;
 background-position: 10px 50%;
 }
 .map-icon{
-background:url(images/icons/black/map.png);
+background:url(images/icons/white/map.png);
 background-size: auto 40%;
 background-repeat: no-repeat;
 background-position: 10px 50%;
@@ -348,7 +348,7 @@ background-position: 10px 50%;
 font-size:30px;
 font-weight:700;
 padding-left:10px;
-color:#000;
+color:#FFFFFF;
 }
 .navbar:after {
   content: '';
@@ -357,9 +357,9 @@ color:#000;
   bottom: 0;
   right: auto;
   top: auto;
-  height: 2px;
+  height: 1px;
   width: 96%;
-  background-color: #000;
+  background-color: #fff;
   display: block;
   z-index: 15;
   -webkit-transform-origin: 50% 100%;
@@ -380,7 +380,7 @@ width:100%;
 height:60px;
 }
 .menu_open_icon{ 
-background:url(images/menu_open_black.png) no-repeat center;
+background:url(images/menu_open.png) no-repeat center;
 }
 .menu_open_icon_white a{
 display:block;
@@ -521,14 +521,14 @@ font-size:80px;
 line-height:90px;
 font-weight:900;
 letter-spacing:-1px;
-color:#000;
+color:#fff;
 } 
 .swiper-slide span.subtitle{
 margin:0px 0 10px 0;
 font-size:40px;
 font-weight:300;
 letter-spacing:0px;
-color:#000;
+color:#fff;
 line-height:40px;
 } 
 .swiper-pagination-bullet-active {
@@ -536,16 +536,13 @@ opacity: 1;
 background: #fff;
 }
 a.swiper_read_more{
-background-color:#fff;
-opacity:0.7;
-color:#000;
-border:2px solid #000;
+color:#ffca2e;
+border:1px solid #fff;
 padding:20px 30px;
 text-decoration:none;
 margin:30px 0 0 0;
 display:inline-block;
 font-size:20px;
-font-weight:bold;
 }
 /*===============================================*/
 /* 8. LISTS */

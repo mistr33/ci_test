@@ -815,7 +815,7 @@ html.ios-gt-6.pixel-ratio-3 .subnavbar:after {
   right: auto;
   height: 1px;
   width: 90%;
-  background-color: #fff;
+  background-color: #000;
   display: block;
   z-index: 15;
   -webkit-transform-origin: 50% 0%;

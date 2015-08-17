@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
+п»ї<?xml version="1.0" encoding="UTF-8"?>
 	<widget xmlns = "http://www.w3.org/ns/widgets"
 		xmlns:gap = "http://phonegap.com/ns/1.0"
 		id        = "com.Citest"
 		versionCode="1"
 		version   = "1.2.3">
-		<name>Медицинский центр Амрита</name>
-		<description>Амрита медцентр</description>
+		<name>РњРµРґРёС†РёРЅСЃРєРёР№ С†РµРЅС‚СЂ РђРјСЂРёС‚Р°</name>
+		<description>РђРјСЂРёС‚Р° РјРµРґС†РµРЅС‚СЂ</description>
 		<author href="http://www.amrita.ru" email="contact@amrita.ru">amrita author</author>
 		<preference name="phonegap-version" value="3.7.0" />
 		<preference name="orientation" value="portrait" />

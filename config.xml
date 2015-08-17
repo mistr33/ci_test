@@ -4,9 +4,9 @@
 		id        = "com.Citest"
 		versionCode="1"
 		version   = "1.2.3">
-		<name>CiCitest</name>
-		<description>Ci-ci-test</description>
-		<author href="http://www.ololoev.com" email="contact@somehe.com">ololoev</author>
+		<name>Медицинский центр Амрита</name>
+		<description>Амрита медцентр</description>
+		<author href="http://www.amrita.ru" email="contact@amrita.ru">amrita author</author>
 		<preference name="phonegap-version" value="3.7.0" />
 		<preference name="orientation" value="portrait" />
 		<preference name="fullscreen" value="true" />

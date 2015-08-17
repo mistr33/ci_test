@@ -45,25 +45,20 @@
 <gap:plugin name="org.apache.cordova.inappbrowser" version="0.5.2" />
 <gap:plugin name="org.apache.cordova.network-information" version="0.2.12" />
 <gap:plugin name="org.apache.cordova.splashscreen" version="0.3.4" />
-
-		<icon src="res/icon/android/icon-36-ldpi.png" gap:platform="android" gap:density="ldpi" />
-		<icon src="res/icon/android/icon-48-mdpi.png" gap:platform="android" gap:density="mdpi" />
-		<icon src="res/icon/android/icon-72-hdpi.png" gap:platform="android" gap:density="hdpi" />
-		<icon src="res/icon/android/icon-96-xhdpi.png" gap:platform="android" gap:density="xhdpi" />
-		<icon src="res/icon/android/icon-144-xxhdpi.png" gap:platform="android" gap:density="xxhdpi" />
+<icon src="res/main_logo.png" />
+		<icon src="res/main_logo36.png" gap:platform="android" gap:density="ldpi" />
+		<icon src="res/main_logo48.png" gap:platform="android" gap:density="mdpi" />
+		<icon src="res/main_logo72.png" gap:platform="android" gap:density="hdpi" />
+		<icon src="res/main_logo96.png" gap:platform="android" gap:density="xhdpi" />
+		<icon src="res/main_logo144.png" gap:platform="android" gap:density="xxhdpi" />
 		<gap:splash src="res/screen/android/screen-ldpi-portrait.jpg" gap:platform="android" gap:density="ldpi" />
 		<gap:splash src="res/screen/android/screen-mdpi-portrait.jpg" gap:platform="android" gap:density="mdpi" />
 		<gap:splash src="res/screen/android/screen-hdpi-portrait.jpg" gap:platform="android" gap:density="hdpi" />
 		<gap:splash src="res/screen/android/screen-xhdpi-portrait.jpg" gap:platform="android" gap:density="xhdpi" />
-		<icon src="res/icon/android/icon-36-ldpi.png" gap:platform="ios" gap:density="ldpi" />
-		<icon src="res/icon/android/icon-48-mdpi.png" gap:platform="ios" gap:density="mdpi" />
-		<icon src="res/icon/android/icon-72-hdpi.png" gap:platform="ios" gap:density="hdpi" />
-		<icon src="res/icon/android/icon-96-xhdpi.png" gap:platform="ios" gap:density="xhdpi" />
-		<icon src="res/icon/android/icon-144-xxhdpi.png" gap:platform="ios" gap:density="xxhdpi" />
-		<gap:splash src="res/screen/android/screen-ldpi-portrait.jpg" gap:platform="ios" gap:density="ldpi" />
-		<gap:splash src="res/screen/android/screen-mdpi-portrait.jpg" gap:platform="ios" gap:density="mdpi" />
-		<gap:splash src="res/screen/android/screen-hdpi-portrait.jpg" gap:platform="ios" gap:density="hdpi" />
-		<gap:splash src="res/screen/android/screen-xhdpi-portrait.jpg" gap:platform="ios" gap:density="xhdpi" />
+
+<!-- iPhone / iPod Touch  -->
+<icon src="res/main_logo60.png" gap:platform="ios" width="60" height="60" />
+
  <gap:config-file platform="ios" parent="CFBundleShortVersionString">
     <string>100</string>
     </gap:config-file>

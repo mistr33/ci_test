@@ -8,6 +8,9 @@
 		<description>Медицинский центр Амрита</description>
 		<author href="http://www.amrita.ru" email="contact@amrita.ru">amrita author</author>
 		<preference name="phonegap-version" value="3.7.0" />
+
+  <preference name="DisallowOverscroll" value="true" />
+
 		<preference name="orientation" value="portrait" />
 		<preference name="fullscreen" value="true" />
 		<preference name="target-device" value="universal" />
@@ -51,14 +54,17 @@
 		<icon src="res/main_logo72.png" gap:platform="android" gap:density="hdpi" />
 		<icon src="res/main_logo96.png" gap:platform="android" gap:density="xhdpi" />
 		<icon src="res/main_logo144.png" gap:platform="android" gap:density="xxhdpi" />
+<!-- iPhone / iPod Touch  -->
+<icon src="res/main_logo60.png" gap:platform="ios" width="50" height="50" />
+
+
+		<gap:splash src="res/screen/android/screen-mdpi-portrait.jpg" />
 		<gap:splash src="res/screen/android/screen-ldpi-portrait.jpg" gap:platform="android" gap:density="ldpi" />
 		<gap:splash src="res/screen/android/screen-mdpi-portrait.jpg" gap:platform="android" gap:density="mdpi" />
 		<gap:splash src="res/screen/android/screen-hdpi-portrait.jpg" gap:platform="android" gap:density="hdpi" />
 		<gap:splash src="res/screen/android/screen-xhdpi-portrait.jpg" gap:platform="android" gap:density="xhdpi" />
 		<gap:splash src="res/screen/android/screen-mdpi-portrait.jpg" gap:platform="ios" width="320" height="480" />
 
-<!-- iPhone / iPod Touch  -->
-<icon src="res/main_logo60.png" gap:platform="ios" width="60" height="60" />
 
  <gap:config-file platform="ios" parent="CFBundleShortVersionString">
     <string>100</string>

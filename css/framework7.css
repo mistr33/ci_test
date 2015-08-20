@@ -591,8 +591,8 @@ html.android .page-from-center-to-right {
 }
 .navbar a.link,
 .toolbar a.link {
-  line-height: 44px;
-  height: 44px;
+  line-height: 54px;
+  height: 54px;
   text-decoration: none;
   position: relative;
   display: -webkit-box;
@@ -630,7 +630,7 @@ html:not(.watch-active-state) .toolbar a.link:active,
 }
 .navbar a.icon-only,
 .toolbar a.icon-only {
-  min-width: 44px;
+  min-width: 54px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
